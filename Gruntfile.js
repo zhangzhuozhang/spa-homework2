@@ -6,17 +6,17 @@ module.exports = function (grunt) {
           preserveLineBreaks: false
         },
         files: {
-          src: './spa-home2.html',
-          dest: './spa-home2.min.html'
+          src: './index.html',
+          dest: './dist/index.html'
         }
       },
       cssmin: {  
-        'baidu.min.css': 'baidu.css'
+        './dist/baidu.css': 'baidu.css'
       },
       uglify: {
         release:{
           files: {
-            'baidu.min.js': 'baidu.js'
+            './dist/baidu.js': 'baidu.js'
           }
         }       
       }
